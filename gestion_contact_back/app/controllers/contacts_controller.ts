@@ -7,9 +7,8 @@ export default class ContactsController {
    * Display a list of resource
    */
   async index({}: HttpContext) {
-    const contacts = await Contact.all()
+    return await Contact.all()
 
-    return contacts
   }
 
   /**
@@ -29,7 +28,6 @@ export default class ContactsController {
    */
   async show({ params }: HttpContext) {
     const contact = await Contact.findOrFail(params.id)
-
     return contact
   }
 
