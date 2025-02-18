@@ -1,0 +1,257 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+    --primary-light-color: #b7dcfa;
+    --primary-color: #0b57d0;
+    --hover-color-component: #e6edfa;
+    --hover-color-icon: #e9ebed;
+    --text-color: #5f6368;
+
+    --background-color: #f8fafd;
+    --white: #fff;
+
+    --transition: all 0.5s ease-in-out;
+    --font-family: "Roboto", sans-serif;
+
+    --border-radius: 5px;
+
+    --shadow: -6px 10px 11px -2px rgba(161, 161, 161, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+:root {
+    font-family: var(--font-family);
+}
+
+.bg-page-full {
+    background-color: var(--background-color);
+}
+
+.main-section {
+    background-color: var(--white);
+    min-height: 85vh;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    transition: 1s;
+}
+.button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.button-radius-10 {
+    border-radius: 10rem;
+}
+
+.button-radius-07 {
+    border-radius: 0.7rem;
+}
+
+.button-active {
+    background-color: var(--primary-light-color);
+    font-weight: 600;
+}
+
+.contain {
+    background-color: var(--primary-light-color);
+    font-weight: 500;
+}
+
+.button-hover-bg-color:hover {
+    background-color: #e6edfa;
+}
+
+.button-hover-shadow:hover {
+    box-shadow: var(--shadow);
+}
+
+.button-shadow {
+    box-shadow: var(--shadow);
+}
+
+.no-border {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.no-border:hover {
+    background-color: var(--primary-light-color);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: var(--transition);
+    color: var(--text-color);
+}
+
+.icon:hover {
+    background-color: var(--hover-color-icon);
+}
+.display-none {
+    display: none;
+}
+
+.position {
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-s-between {
+    justify-content: space-between;
+}
+
+.justify-s-around {
+    justify-content: space-around;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+.input-field {
+    background-color: #f1f3f4;
+    padding: 0.5rem;
+    width: 40%;
+    height: 3rem;
+    border-radius: var(--border-radius);
+}
+
+.input-field input,
+.input-field input:focus {
+    border: initial;
+    background-color: initial;
+    outline: none;
+}
+
+.illus-size-2rem {
+    width: 15rem;
+}
+
+.illus-size-2rem img {
+    width: 100%;
+}
+
+.padding-container {
+    padding: 1rem;
+}
+
+.margin-top-bottom-1rem {
+    margin: 1rem 0;
+}
+
+.margin-right-04rem {
+    margin-right: 0.4rem;
+}
+
+.padding-top-bottom-1rem {
+    padding: 1rem 0;
+}
+
+.w-0 {
+    width: 0px;
+}
+.w-8 {
+    width: 8%;
+}
+.w-10 {
+    width: 10%;
+}
+.w-11 {
+    width: 11%;
+}
+.w-15 {
+    width: 15%;
+}
+.w-20 {
+    width: 20%;
+}
+.w-30 {
+    width: 30%;
+}
+.w-60 {
+    width: 60%;
+}
+.w-80 {
+    width: 80%;
+}
+.w-90 {
+    width: 80%;
+}
+.w-100 {
+    width: 100%;
+}
+.w-4rem {
+    width: 10rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .md-justify-s-between {
+        justify-content: space-between;
+    }
+
+    .md-justify-flex-end {
+        justify-content: flex-end;
+    }
+
+    .md-display-none {
+        display: none;
+    }
+
+    .md-w-100 {
+        width: 100%;
+    }
+
+    .md-w-70 {
+        width: 70%;
+    }
+
+    .md-display-block {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sd-padding-container {
+        padding: 1rem 0.5rem;
+    }
+}

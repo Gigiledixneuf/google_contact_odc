@@ -1,0 +1,30 @@
+<div class="contact-list-container">
+    <div class="contact-row">
+      <div class="contact-info">
+        <img
+          src="assets/images/logo_contact.png"
+          alt="Profile Picture"
+          class="contact-avatar"
+        />
+        <div class="contact-name">{{contact.name}}</div>
+      </div>
+      <div class="contact-email">
+        {{contact.email}}
+      </div>
+      <div class="contact-phone">+{{contact.numero}}</div>
+
+      <div class="contact-phone">
+        <a class="btn btn-primary" [routerLink]="['/contact', contact.id]">
+          <i class="fas fa-eye"></i>
+        </a>
+        <a [routerLink]="['/edit-contact', contact.id]" class="btn btn-warning mx-2">
+          <i class="fas fa-edit "></i>
+        </a>
+        <a (click)="deleteContact(contact.id)" class="btn btn-danger mx-2">
+          <i class="fas fa-trash "></i>
+        </a>
+      </div>
+
+    </div>
+</div>
+  

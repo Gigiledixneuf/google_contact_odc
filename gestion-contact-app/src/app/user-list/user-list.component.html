@@ -1,0 +1,19 @@
+
+<h3 class="title title-level-1">Utilisateurs <span>(0)</span></h3>
+<div class="contact-container flex justify-center items-center">
+  <div>
+    <div class="flex justify-center items-center margin-top-bottom-1rem">
+    </div>
+  </div>
+ 
+</div>
+<div class="contact-list-container">
+  <!-- Header -->
+  <div class="contact-list-header">
+    <div class="header-item">Nom</div>
+    <div class="header-item">E-mail</div>
+    <div class="header-item">Actions</div>
+  </div>
+<!-- contact row iciii===== -->
+ <app-user *ngFor="let user of users" [user]="user"></app-user>
+</div>

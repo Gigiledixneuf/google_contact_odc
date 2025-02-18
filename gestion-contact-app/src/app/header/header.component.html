@@ -1,0 +1,161 @@
+@if(isConnected){
+<header class="flex padding-container justify-s-between sd-padding-container">
+  <div class="flex justify-s-between items-center w-8">
+    <!-- Grand titre -->
+    <img src="assets/images/logo.png" alt="logo" height="50" width="150">
+  </div>
+  
+  <!-- Barre de recherche -->
+  <!-- <div class="w-90 md-w-70 flex justify-start items-center md-justify-flex-end">
+    <div class="flex input-field items-center">
+      <div class="pointer icon justify-center items-center">
+        <span class="material-symbols-outlined"> search </span>
+      </div>
+      <input
+        type="text"
+        name="searchInput"
+        id="searchInput"
+        placeholder="Recherche"
+      />
+    </div>
+  </div> -->
+
+  <!-- Bouton deconnexion -->
+
+  
+  <div style="display: flex; gap: 10px;">
+    <a  type="button" class="button flex items-center contain button-radius-07 button-hover-shadow" style="border: 1px solid #000; color: #000; background-color: #fff;">
+        {{nom}}
+    </a>
+    <a (click)="deconnexion()" type="button" class="button flex items-center contain button-radius-07 button-hover-shadow" style="background-color: #000; color: #fff;">
+        Déconnexion
+    </a>
+  </div>
+</header>
+<main class="flex padding-container justify-s-between">
+  <section id="side-bar" class="w-15 md-display-none">
+    <div>
+      <a [routerLink]="('/create-contact')"
+        type="button"
+        class="button flex items-center contain button-radius-07 button-hover-shadow"
+      >
+        <span class="material-symbols-outlined margin-right-04rem">
+          add
+        </span>
+        Créer un contact
+      </a>
+    </div>
+
+    <div style="margin-top: 10px; text-wrap: nowrap;">
+        <a [routerLink]="('/create-user')"
+          type="button"
+          class="button flex items-center contain button-radius-07 button-hover-shadow"
+        >
+          <span class="material-symbols-outlined margin-right-04rem">
+            add
+          </span>
+          Nouveau compte
+        </a>
+      </div>
+    <!-- liste contacts button -->
+    <div class="" style="margin-top: 30px;">
+      <a [routerLink]="('/contact-list')" type="button"
+        class="button justify-s-between flex items-center button-hover-bg-color button-radius-10 w-100">
+        <p class="flex items-center justify-s-between">
+          <span class="material-symbols-outlined margin-right-04rem">
+            person
+          </span>
+          Contacts
+        </p>
+      </a>
+    </div>
+
+    <!-- Liste users button -->
+     @if(fonction == "administrateur"){
+    <div class="">
+        <a [routerLink]="('/user-list')" type="button"
+            class="button justify-s-between flex items-center button-hover-bg-color button-radius-10 w-100">
+            <p class="flex items-center justify-s-between">
+                <span class="material-symbols-outlined margin-right-04rem">
+                    group
+                </span>
+                Utilisateurs
+            </p>
+        </a>
+    </div>
+    }
+
+    <!-- Trash button -->
+    <div class="">
+        <a
+            class="button justify-s-between flex items-center button-hover-bg-color button-radius-10 w-100">
+            <p class="flex items-center justify-s-between">
+                <span class="material-symbols-outlined margin-right-04rem">
+                    favorite
+                </span>
+                Favoris
+            </p>
+        </a>
+    </div>
+
+
+    <div class="">
+      <a 
+        class="button justify-s-between flex items-center button-hover-bg-color button-radius-10 w-100">
+        <p class="flex items-center justify-s-between">
+          <span class="material-symbols-outlined margin-right-04rem">
+            delete
+          </span>
+          Corbeille
+        </p>
+      </a>
+    </div>
+  </section>
+   
+  <section id="main-section" class="w-90 main-section md-w-100">
+    <router-outlet></router-outlet>
+  </section>
+
+</main>
+}
+@else {
+  <header class="flex padding-container justify-s-between sd-padding-container">
+    <div class="flex justify-s-between items-center w-8">
+      <!-- Grand titre -->
+      <img src="assets/images/logo.png" alt="logo" height="50" width="150">
+    </div>
+    
+    <!-- Barre de recherche -->
+    <!-- <div class="w-90 md-w-70 flex justify-start items-center md-justify-flex-end">
+      <div class="flex input-field items-center">
+        <div class="pointer icon justify-center items-center">
+          <span class="material-symbols-outlined"> search </span>
+        </div>
+        <input
+          type="text"
+          name="searchInput"
+          id="searchInput"
+          placeholder="Recherche"
+        />
+      </div>
+    </div> -->
+  
+    <!-- Bouton deconnexion -->
+  
+    
+    <div style="display: flex; gap: 10px;">
+      <a [routerLink]= "('/')" type="button" class="button flex items-center contain button-radius-07 button-hover-shadow" style="border: 1px solid #000; color: #000; background-color: #fff;">
+          Connexion
+      </a>
+      <a  [routerLink]= "('/create-user')"type="button" class="button flex items-center contain button-radius-07 button-hover-shadow" style="background-color: #000; color: #fff;">
+          Inscription
+      </a>
+    </div>
+  </header>
+  <main >
+    <router-outlet></router-outlet>
+  </main>
+}
+
+
+

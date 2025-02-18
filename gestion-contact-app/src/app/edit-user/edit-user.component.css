@@ -1,0 +1,122 @@
+/* General Container */
+.form-container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left; /* Aligner le texte à gauche */
+    color: #555;
+  }
+  
+  /* Back Button */
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    margin: 40px 0;
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  /* Profile Image */
+  .profile-image {
+    position: relative;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #eaf3ff;
+  }
+  
+  .add-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  /* Label Button */
+  .label-button {
+    margin: 20px 0;
+  }
+  
+  .button-add-label {
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* Save Button Section */
+  .save-section {
+    margin: 20px 0;
+    display: flex;
+    justify-content: start; /* Aligné à gauche */
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .star-icon {
+    font-size: 24px;
+    color: #ccc;
+  }
+  
+  .save-button {
+    border: none;
+    background-color: #eee;
+    color: #ccc;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: not-allowed;
+  }
+  
+  /* Form Fields */
+  .form-fields {
+    max-width: 500px;
+    text-align: start; /* Aligner le contenu du formulaire à gauche */
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .material-symbols-outlined {
+    font-size: 20px;
+    color: #999;
+  }
+  
+  input {
+    flex: 1;
+    font-size: 14px;
+  }
+  

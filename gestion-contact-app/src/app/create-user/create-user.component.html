@@ -1,0 +1,22 @@
+<div class="form-container">
+   
+    <h1 class="my-5">Créer un utilisateur</h1>
+    <div *ngIf="isOpen" class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>Alerte!</strong> Enregistrement réussi
+       <button (click)="close()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+     </div> 
+    <form [formGroup]="applyForm" (submit)="saveContactApi()" >
+      <p>Nom complet : <input class="form-control" type="text" formControlName="fullName"></p>
+      <p>Email : <input class="form-control" type="email" formControlName="email"></p>
+      <p>Mot de passe : <input class="form-control" type="email" formControlName="password"></p>
+      <input type="hidden" formControlName="fonction">
+
+      <p>
+          <button type="submit" class="btn btn-primary form-control">
+              Enregistrer
+          </button>
+      </p>
+    </form>
+  </div>
+    
+  

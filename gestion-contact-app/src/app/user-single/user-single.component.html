@@ -1,0 +1,14 @@
+
+<h2>Détails de l'utilisateur</h2>
+   
+<div class="row mt-5" style="background-color: #f0f0f0; border-radius: 8px;">
+ <div class="col my-3">
+     <p class="fs-5">Nom complet : {{user?.fullName}} </p>
+     <p class="fs-5">Email : {{user?.email}} </p>
+ </div>
+</div>
+ <div class="contact-history">
+     <span>Historique</span>
+     <span>Dernière modification · {{user?.updatedAt}}</span>
+     <span>Ajout au contact · {{user?.createdAt}}</span>
+ </div>

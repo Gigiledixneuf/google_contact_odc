@@ -1,0 +1,18 @@
+
+<h2>Détails du Contact</h2>
+   
+<div class="row mt-5" style="background-color: #f0f0f0; border-radius: 8px;">
+ <div class="col my-3">
+     <p>Nom : {{contact?.name}} </p>
+     <p>Post nom : {{contact?.lastname}} </p>
+     <p>Email : {{contact?.email}}</p>
+     <p>Date d'anniversaire : {{contact?.anniv}}</p>
+     <p>Portable : {{contact?.numero}}</p>
+     <p>Notes : {{contact?.notes}}</p>
+ </div>
+</div>
+ <div class="contact-history">
+     <span>Historique</span>
+     <span>Dernière modification · {{contact?.updatedAt}}</span>
+     <span>Ajout au contact · {{contact?.createdAt}}</span>
+ </div>
